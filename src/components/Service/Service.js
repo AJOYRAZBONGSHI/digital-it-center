@@ -14,12 +14,31 @@ const Service = (props) => {
             <Card className="p-3 my-3 mx-auto bg-light card">
               <Card.Img className="img mx-auto" variant="top" src={img} />
               <Card.Body>
-                <Card.Title>Course name : {name}</Card.Title>
-                <Card.Title>Teacher : {tutor}</Card.Title>
-                <Card.Title>Time : {duration}</Card.Title>
-                <Card.Title>Software : {toots}</Card.Title>
-                <Card.Title>Rating : {rating}</Card.Title>
-                <Card.Title> Price : {price}</Card.Title>
+                <Card.Title>
+                  <i className="fas fa-graduation-cap"></i>{" "}
+                  <span>Course name : {name}</span>
+                </Card.Title>
+                <Card.Title>
+                  <i className="fas fa-chalkboard-teacher"></i>{" "}
+                  <span>Teacher : {tutor}</span>
+                </Card.Title>
+                <Card.Title>
+                  <i className="far fa-clock"></i>{" "}
+                  <span>Duration : {duration}</span>
+                </Card.Title>
+                <Card.Title>
+                  <i className="fas fa-laptop"></i> <span>Software : {toots}</span>
+                </Card.Title>
+                <Card.Title>
+                  <span>Rating : {rating}</span> <i className="fas fa-star"></i>
+                  <i className="fas fa-star"></i>
+                  <i className="fas fa-star"></i>
+                </Card.Title>
+                <Card.Title>
+                  {" "}
+                  <i className="fas fa-dollar-sign"></i>{" "}
+                  <span>Price : {price}</span>
+                </Card.Title>
               </Card.Body>
             </Card>
           </Col>
